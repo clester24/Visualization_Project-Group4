@@ -4,7 +4,7 @@ function init() {
   
   // Add list of Years to "Select Year" HTML Dropdown menu
     d3.json("data.js").then(() => {
-      var YearID = [2013, 2014, 2015, 2016, 2017];
+      var YearID = [2013, 2014, 2015, 2016, 2017,2019, 2019];
       YearID.forEach((ID) => {
         selector
         .append("option")
