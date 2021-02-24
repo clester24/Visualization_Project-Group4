@@ -1,4 +1,4 @@
-var dataset = [{
+[{
       "name": "Rim Fire",
       "county": "Tuolumne",
       "latitude": 37.857,
