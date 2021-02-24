@@ -1,31 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>California Fires 2013 - 2017</title>
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>California Fires</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
+
 <body>
-  <div class="col-md-5">
-    <div id="bar-plot"></div>
-  </div>
-  <div class="col-md-5">
-    <div id="bar-plot2"></div>
-  </div>
-  <div class="col-md-5">
-    <div id="bar-plot3"></div>
-  </div>
-  <div class="col-md-5">
-    <div id="bar-plot4"></div>
-  </div>
-  <div class="col-md-5">
-    <div id="bar-plot5"></div>
-  </div>
-    <script src="data.js"></script>
-    <script src="plot.js"></script>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h1>California County Fires 
+          <br>(Acres Burned) 2013-2017 </h1>
+        <p>Use the interactive chart below to explore the counties with the most acres burned between years 2013-2017</p>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div class="col-md-2">
+        <div class="well"  id="samplePanel">
+          <h5>Select Year:</h5>
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        </div>
+      </div>
+        <br>
+        <br>
+
+      <div class="col-md-5">
+        <div id="bar"></div>
+      </div>
+    </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="plot.js"></script>
+  <script src="data.js"></script>
+
 </body>
-</html>
 
 </html>
